@@ -79,5 +79,27 @@ namespace Es_git
             CreazioneBrano cb = new CreazioneBrano(this, fileBrani);
             cb.Show();
         }
+
+        private void btnVisualizza_Click(object sender, RoutedEventArgs e)
+        {
+            int index = lstBrani.SelectedIndex;
+            lstBrani.SelectedIndex = -1;
+
+            this.Hide();
+            VisualizzaBrani vb = new VisualizzaBrani(cd.ListaBraniInCD[index]);
+            vb.Show();
+        }
+
+        private void lstBrani_SelectionChanged(object sender, SelectionChangedEventArgs e)
+        {
+            if (lstBrani.SelectedIndex >= 0)
+            {
+                btnVisualizza.IsEnabled = true;
+            }
+            else
+            {
+                btnVisualizza.IsEnabled = false;
+            }
+        }
     }
 }

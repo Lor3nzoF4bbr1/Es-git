@@ -1,0 +1,19 @@
+﻿<Window x:Class="Es_git.VisualizzaBrani"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Es_git"
+        mc:Ignorable="d"
+        Title="VisualizzaBrani" Height="450" Width="800">
+    <Grid>
+        <Label Content="Titolo                        Autore                       Durata" HorizontalAlignment="Left" Height="40" Margin="0,10,0,0" VerticalAlignment="Top" Width="782" FontSize="20"/>
+        <Label x:Name="lblTitolo" Content="" HorizontalAlignment="Right" Height="63" Margin="0,55,610,0" VerticalAlignment="Top" Width="172" FontSize="20"/>
+        <Label x:Name="lblAutore" Content="" HorizontalAlignment="Left" Height="63" Margin="187,55,0,0" VerticalAlignment="Top" Width="183" FontSize="20"/>
+        <Button x:Name="btnRitorna" Content="Ritorna al CD" HorizontalAlignment="Left" Height="74" Margin="622,335,0,0" VerticalAlignment="Top" Width="160" FontSize="20" Click="btnRitorna_Click" />
+        <Label x:Name="lblDurata" Content="" HorizontalAlignment="Left" Height="63" Margin="375,55,0,0" VerticalAlignment="Top" Width="183" FontSize="20"/>
+        <TextBox x:Name="txtConfrontoDurata" HorizontalAlignment="Left" Height="74" Margin="51,231,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="223" RenderTransformOrigin="0.916,0.815" FontSize="20"/>
+        <Button x:Name="btnConfronto" Content="Confronta durata" HorizontalAlignment="Left" Height="74" Margin="51,324,0,0" VerticalAlignment="Top" Width="223" FontSize="20" Click="btnConfronto_Click"/>
+
+    </Grid>
+</Window>

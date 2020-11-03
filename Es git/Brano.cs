@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Es_git
 {
-    class Brano
+    public class Brano
     {
         public Brano(string titolo, string autore, double durata)
         {
