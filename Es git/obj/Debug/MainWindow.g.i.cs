@@ -40,6 +40,46 @@ namespace Es_git {
     /// </summary>
     public partial class MainWindow : System.Windows.Window, System.Windows.Markup.IComponentConnector {
         
+        
+        #line 10 "..\..\MainWindow.xaml"
+        [System.Diagnostics.CodeAnalysis.SuppressMessageAttribute("Microsoft.Performance", "CA1823:AvoidUnusedPrivateFields")]
+        internal System.Windows.Controls.ListBox lstBrani;
+        
+        #line default
+        #line hidden
+        
+        
+        #line 11 "..\..\MainWindow.xaml"
+        [System.Diagnostics.CodeAnalysis.SuppressMessageAttribute("Microsoft.Performance", "CA1823:AvoidUnusedPrivateFields")]
+        internal System.Windows.Controls.Label lblStudenti;
+        
+        #line default
+        #line hidden
+        
+        
+        #line 12 "..\..\MainWindow.xaml"
+        [System.Diagnostics.CodeAnalysis.SuppressMessageAttribute("Microsoft.Performance", "CA1823:AvoidUnusedPrivateFields")]
+        internal System.Windows.Controls.Button btnVisualizza;
+        
+        #line default
+        #line hidden
+        
+        
+        #line 13 "..\..\MainWindow.xaml"
+        [System.Diagnostics.CodeAnalysis.SuppressMessageAttribute("Microsoft.Performance", "CA1823:AvoidUnusedPrivateFields")]
+        internal System.Windows.Controls.Button btnIns;
+        
+        #line default
+        #line hidden
+        
+        
+        #line 14 "..\..\MainWindow.xaml"
+        [System.Diagnostics.CodeAnalysis.SuppressMessageAttribute("Microsoft.Performance", "CA1823:AvoidUnusedPrivateFields")]
+        internal System.Windows.Controls.Button btnElimina;
+        
+        #line default
+        #line hidden
+        
         private bool _contentLoaded;
         
         /// <summary>
@@ -68,6 +108,48 @@ namespace Es_git {
         [System.Diagnostics.CodeAnalysis.SuppressMessageAttribute("Microsoft.Maintainability", "CA1502:AvoidExcessiveComplexity")]
         [System.Diagnostics.CodeAnalysis.SuppressMessageAttribute("Microsoft.Performance", "CA1800:DoNotCastUnnecessarily")]
         void System.Windows.Markup.IComponentConnector.Connect(int connectionId, object target) {
+            switch (connectionId)
+            {
+            case 1:
+            this.lstBrani = ((System.Windows.Controls.ListBox)(target));
+            
+            #line 10 "..\..\MainWindow.xaml"
+            this.lstBrani.SelectionChanged += new System.Windows.Controls.SelectionChangedEventHandler(this.lstBrani_SelectionChanged);
+            
+            #line default
+            #line hidden
+            return;
+            case 2:
+            this.lblStudenti = ((System.Windows.Controls.Label)(target));
+            return;
+            case 3:
+            this.btnVisualizza = ((System.Windows.Controls.Button)(target));
+            
+            #line 12 "..\..\MainWindow.xaml"
+            this.btnVisualizza.Click += new System.Windows.RoutedEventHandler(this.btnVisualizza_Click);
+            
+            #line default
+            #line hidden
+            return;
+            case 4:
+            this.btnIns = ((System.Windows.Controls.Button)(target));
+            
+            #line 13 "..\..\MainWindow.xaml"
+            this.btnIns.Click += new System.Windows.RoutedEventHandler(this.btnIns_Click);
+            
+            #line default
+            #line hidden
+            return;
+            case 5:
+            this.btnElimina = ((System.Windows.Controls.Button)(target));
+            
+            #line 14 "..\..\MainWindow.xaml"
+            this.btnElimina.Click += new System.Windows.RoutedEventHandler(this.btnElimina_Click);
+            
+            #line default
+            #line hidden
+            return;
+            }
             this._contentLoaded = true;
         }
     }
