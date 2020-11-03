@@ -7,10 +7,9 @@
         mc:Ignorable="d"
         Title="MainWindow" Height="450" Width="800">
     <Grid>
-        <ListBox x:Name="lstBrani" HorizontalAlignment="Left" Height="348" Margin="10,61,0,0" VerticalAlignment="Top" Width="270" SelectionChanged="lstBrani_SelectionChanged"/>
-        <Label x:Name="lblStudenti" Content="Brani" HorizontalAlignment="Left" Height="56" Margin="10,0,0,0" VerticalAlignment="Top" Width="244" FontSize="36"/>
-        <Button x:Name="btnVisualizza" Content="Visualizza Dati&#xD;&#xA;       Brano" HorizontalAlignment="Left" Height="88" Margin="418,179,0,0" VerticalAlignment="Top" Width="218"  FontSize="20" Click="btnVisualizza_Click"/>
+        <ListBox x:Name="lstBrani" HorizontalAlignment="Left" Height="348" Margin="79,56,0,0" VerticalAlignment="Top" Width="270" SelectionChanged="lstBrani_SelectionChanged"/>
+        <Label x:Name="lblStudenti" Content="Brani" HorizontalAlignment="Left" Height="56" Margin="79,0,0,0" VerticalAlignment="Top" Width="244" FontSize="36"/>
+        <Button x:Name="btnVisualizza" Content="Visualizza Dati&#xD;&#xA;       Brano" HorizontalAlignment="Left" Height="88" Margin="418,252,0,0" VerticalAlignment="Top" Width="218"  FontSize="20" Click="btnVisualizza_Click"/>
         <Button x:Name="btnIns" Content="Inserisci Brano" HorizontalAlignment="Left" Height="88" Margin="418,70,0,0" VerticalAlignment="Top" Width="218" FontSize="20" Click="btnIns_Click"/>
-        <Button x:Name="btnElimina" Content="Elimina Brano" HorizontalAlignment="Left" Height="88" Margin="418,290,0,0" VerticalAlignment="Top" Width="218" FontSize="20" Click="btnElimina_Click"/>
     </Grid>
 </Window>
