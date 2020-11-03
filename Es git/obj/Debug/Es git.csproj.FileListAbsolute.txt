@@ -1,0 +1,6 @@
+C:\Users\fabbr\OneDrive\Desktop\mainfilippi\Es-git\Es git\obj\Debug\Es git.csprojAssemblyReference.cache
+C:\Users\fabbr\OneDrive\Desktop\mainfilippi\Es-git\Es git\obj\Debug\CreazioneBrano.g.cs
+C:\Users\fabbr\OneDrive\Desktop\mainfilippi\Es-git\Es git\obj\Debug\MainWindow.g.cs
+C:\Users\fabbr\OneDrive\Desktop\mainfilippi\Es-git\Es git\obj\Debug\App.g.cs
+C:\Users\fabbr\OneDrive\Desktop\mainfilippi\Es-git\Es git\obj\Debug\Es git_MarkupCompile.cache
+C:\Users\fabbr\OneDrive\Desktop\mainfilippi\Es-git\Es git\obj\Debug\Es git_MarkupCompile.lref

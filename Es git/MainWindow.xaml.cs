@@ -22,20 +22,20 @@ namespace Es_git
     public partial class MainWindow : Window
     {
         CD cd;
+        string fileBrani;
         public MainWindow()
         {
             InitializeComponent();
 
-            LeggiFile();
+            fileBrani = "";
 
-            scriviInListbox();
+            LeggiFile();
         }
 
         public void LeggiFile()
         {
             List<Brano> brani = new List<Brano>();
             string[] elementiCD;
-            string fileBrani = "";
 
             using (StreamReader file = new StreamReader("CD.txt"))
             {
@@ -45,7 +45,7 @@ namespace Es_git
                 fileBrani = elementiCD[2];
             }
 
-            using (StreamReader file = new StreamReader(fileBrani))
+            using (StreamReader file = new StreamReader(fileBrani + ".txt")) 
             {
                 while (!file.EndOfStream)
                 {
@@ -59,6 +59,8 @@ namespace Es_git
             }
 
             cd = new CD(brani, elementiCD[0], elementiCD[1]);
+
+            scriviInListbox();
         }
 
         private void scriviInListbox()
@@ -69,6 +71,13 @@ namespace Es_git
             {
                 lstBrani.Items.Add(b.ToString());
             }
+        }
+
+        private void btnIns_Click(object sender, RoutedEventArgs e)
+        {
+            this.Hide();
+            CreazioneBrano cb = new CreazioneBrano(this, fileBrani);
+            cb.Show();
         }
     }
 }

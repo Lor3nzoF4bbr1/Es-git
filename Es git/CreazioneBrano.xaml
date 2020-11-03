@@ -1,0 +1,17 @@
+﻿<Window x:Class="Es_git.CreazioneBrano"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Es_git"
+        mc:Ignorable="d"
+        Title="CreazioneBrano" Height="450" Width="800">
+    <Grid>
+        <Label Content="Titolo                        Autore                       Durata" HorizontalAlignment="Left" Height="40" Margin="10,10,0,0" VerticalAlignment="Top" Width="772" FontSize="20"/>
+        <Button x:Name="btnCrea" Content="Aggiungi Brano" HorizontalAlignment="Left" Height="74" Margin="622,335,0,0" VerticalAlignment="Top" Width="160" FontSize="20" Click="btnCrea_Click"/>
+        <TextBox x:Name="txtTitolo" HorizontalAlignment="Left" Height="63" Margin="10,55,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="182" FontSize="20"/>
+        <TextBox x:Name="txtAutore" HorizontalAlignment="Left" Height="63" Margin="197,55,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="182" FontSize="20"/>
+        <TextBox x:Name="txtDurata" HorizontalAlignment="Left" Height="63" Margin="384,55,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="182" FontSize="20"/>
+
+    </Grid>
+</Window>
